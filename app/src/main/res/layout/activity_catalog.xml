@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4F0FF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#3FBFDF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="333dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="39dp"
+        android:background="#37D0F2"
+        app:cardBackgroundColor="#37D0F2"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_promo"
+                android:layout_width="300dp"
+                android:layout_height="164dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ImageButton
+                android:id="@+id/rightarr"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginBottom="75dp"
+                android:background="#8DEFE3E3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/rightarr" />
+
+            <ImageButton
+                android:id="@+id/leftarr"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:background="#8DEFE3E3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/leftarr" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="373dp"
+        android:layout_height="356dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#37D0F2"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cake_rec"
+            android:layout_width="341dp"
+            android:layout_height="336dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coklat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        app:cardBackgroundColor="#FFDDF2"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageButton
+            android:id="@+id/btn_coklat"
+            android:layout_width="67dp"
+            android:layout_height="69dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/coklat" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/peanut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:cardBackgroundColor="#FFDDF2"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintStart_toEndOf="@+id/coklat"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageButton
+            android:id="@+id/btn_peanut"
+            android:layout_width="67dp"
+            android:layout_height="69dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/peanut" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardBackgroundColor="#FFDDF2"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_cart_catalog"
+        app:layout_constraintStart_toEndOf="@+id/peanut"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageButton
+            android:id="@+id/btn_offer"
+            android:layout_width="67dp"
+            android:layout_height="69dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/offer" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/btn_cart_catalog"
+        android:layout_width="59dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:srcCompat="@drawable/cart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

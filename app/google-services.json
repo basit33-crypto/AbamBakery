@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "291089047305",
+    "project_id": "abambakery-c91a3",
+    "storage_bucket": "abambakery-c91a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291089047305:android:c671c8a373f68e0fde3dd8",
+        "android_client_info": {
+          "package_name": "com.example.abambakery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOrJPk4i181xQk-0HVasu8cn1x8hWSA8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
